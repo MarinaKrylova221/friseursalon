@@ -422,7 +422,7 @@ h2 {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   border: none;
-  background-color: rot;
+  background-color: #d53032;
   color: white;
   border-radius: 30px;
   font-weight: 600;
@@ -458,41 +458,47 @@ h2 {
 /* Gutschein */
 
 .voucher {
-    width: 95%;
+    width: 70%;
+    margin: 20px auto; /* по центру горизонтально */
     border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     animation: float 3s ease-in-out infinite;
-    margin: 20px;
 }
+
 .voucher img {
-    width: 100%;
-    height: auto;
-        
+    width: 100%; /* заполняет всю ширину контейнера */
+    height: auto; /* автоматическая высота */
+    display: block; /* убрать пробелы под изображением */
 }
+
 .voucher-content {
     text-align: center;
     background-color: #fff;
 }
+
 .voucher-content h2 {
     margin: 0 0 10px;
     color: #da3939;
     font-size: 1.5em;
 }
+
 .voucher-content p {
     margin: 0;
     padding-bottom: 15px;
     color: #555;
 }
+
 @keyframes float {
     0%, 100% {
-        transform: translatey(0px);
+        transform: translateY(0);
     }
     50% {
-        transform: translatey(-10px);
+        transform: translateY(-10px);
     }
 }
+
 
 /* Portfolio */
 
